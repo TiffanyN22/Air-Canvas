@@ -1,3 +1,506 @@
-<h2>
-    The index works.
-</h2>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Air Canvas</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" style="background-image: url({{url_for('static', filename='assets/img/uim.jpg')}})">
+            <div class="container">
+                <div class="masthead-subheading">Valorious Vampires</div>
+                <div class="masthead-heading text-uppercase">Air Canvas</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="{{url_for('canvas')}}" >Try it Out</a>
+            </div>
+        </header>
+        <!-- Gestures
+-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Features</h2>
+                </div>
+                <!-- Gesture icons -->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Thumbs Up</h4>
+                        <p class="text-muted">Increase Brush Size</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-thumbs-down fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Thumbs Down</h4>
+                        <p class="text-muted">Decrease Brush Size</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-hand-point-up fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Finger Point</h4>
+                        <p class="text-muted">Draw on Canvas</p>
+                    </div>
+                  </div>
+               <div class="row text-center">
+                   <div class="col-md-2">
+                   </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-hand fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Palm</h4>
+                        <p class="text-muted">Eraser Mode</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-hand-back-fist fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Fist</h4>
+                        <p class="text-muted">Select brush / Change Brush Color</p>
+                    </div>
+                </div>
+          
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Tech Stack</h2>
+                    <h3 class="section-subheading text-muted">All of the technology used in our development of Air Canvas</h3>
+                </div>
+              
+              
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='assets/img/portfolio/object_detection.jpg')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Object Detection</div>
+                                <div class="portfolio-caption-subheading text-muted">The AI behind it</div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-lg-4 col-sm-6 mb-4" style="height: 100%">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='assets/img/portfolio/yolo.jpg')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">YOLOv5</div>
+                                <div class="portfolio-caption-subheading text-muted">Object detection model</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='assets/img/portfolio/our_dataset.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Dataset</div>
+                                <div class="portfolio-caption-subheading text-muted">Original image data</div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                 
+                      
+                      
+                      
+                  <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='assets/img/portfolio/roboflow.png')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Roboflow</div>
+                                <div class="portfolio-caption-subheading text-muted">streamlined workflow</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='assets/img/portfolio/web_design.jpeg')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Image Credits</div>
+                                <div class="portfolio-caption-subheading text-muted">Credits given where due</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static', filename='assets/img/portfolio/webcam_img.jpg')}}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Webcam Integration</div>
+                                <div class="portfolio-caption-subheading text-muted">no shot</div>
+                            </div>
+                        </div>
+                      
+                  </div>
+                  
+                  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">A timeline of our project.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='assets/img/about/canvas.jpg')}}" style = "width: auto;height:100%" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Week One</h4>
+                                <h4 class="subheading">_____</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Our team started by learning about machine learning, neural networks, and the applications of the technology. Soon after, we began brainstorming project ideas. After some careful debate and consideration, we settled on <em>Air Canvas</em>, a webcam-based art application. Air Canvas began as a convolutional neural network trained on internet stock images. However, we promptly realized that this approach was flawed. There was one simple error: the internet data didn't match our webcam data. We realized that our webcam-based service required webcam-based data, so we began building a new dataset. Entering the weekend, each team member was assigned the task of collecting and annotating <strong>130</strong> webcam images. Air Canvas truly is a product of hard work.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='assets/img/about/colors.png')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Week Two</h4>
+                                <h4 class="subheading">_____</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">  Now that we have the webcam images labeled in our dataset, we used Roboflow's data augmentation feature to get more data, avoid overfitting, and account for different webcam environments.  For example, we messed with the brightness and saturation to account for different lighting conditions, added noise to defend against adversarial attacks, flipped the images to have more of a mix between left and right hands, and more.  
+                              </p></div>
+                          <div class="timeline-body"><p class="text-muted">  Once we finished finalizing our dataset, we learned about Convolutional Neural Network and YOLO's algorithm before training our model with yolov5.  Afterwards, we used weights and biases to evaluate our model's accuracy, precision, and recall.
+                              </p></div>
+                          <div class="timeline-body"><p class="text-muted">  Next up, we started working on the canvas and webcam, which involved using cv2 to draw circles with different sizes and colors at a given coordinate, passing our webcam frames into our trained model to detect the various hand signals along with their coordinates and classes, drawing a bounding box around the gestures with cv2, and writing code to adjust our brush based on the detected hand signal.
+                              </p></div>
+                          <div class="timeline-body"><p class="text-muted">  Finally, we got started with the frontend of our website, which includes picking a template and editing the information presented.
+                              </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='assets/img/about/colored_canvas.png')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Week Three</h4>
+                                <h4 class="subheading">____</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">During Week Three, our team put our heads down and got to work on the website design aspect of the project. We learned HTML, Flask, CSS, and other tools to accomplish this. Through much trial and error, we finally finished our website before the end of the week. We even had time to spare!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='assets/img/about/4.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Finished Product</h4>
+                                <h4 class="subheading">_____</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> By the end of all 3 weeks, we were able to successfully train a model to recognize the 5 gestures and change the brush or add color to the drawing accordingly.  Furthermore, we wrote code to capture and process video from the user's webcam, created a canvas that displayed both the webcam and drawing, and coded in an option for the user to upload their own images for the background of the canvas.  For the gestures, we also added bounding boxes for when the model recognizes the user's hand gestures, displayed the brush size when the user puts a thumbs up or thumbs down, and changed the brush color when the user has a fist along the left side on the canvas.
+                              </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                LESS
+                                <br />
+                                <br />
+                                GOOO
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">The Valorious Vampires</h2>
+                    <h3 class="section-subheading text-muted">Meet the people behind Air Canvas.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/team/IMG_6079.JPG')}}" alt="..." />
+                            <h4>Stephen J</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/team/jyzyofr.jpg')}}" alt="..." />
+                            <h4>Jiayi Z</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/team/3.jpg')}}" alt="..." />
+                            <h4>Parker T</h4>
+                        </div>
+                      </div>
+                  <div class="col-lg-4">
+                      <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/team/1.jpg')}}" alt="..." />
+                            <h4>Nathan J</h4>
+                        </div>
+                       </div>
+                  <div class="col-lg-4">
+                       <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/team/Tiffany Profile.png')}}" alt="..." />
+                            <h4>Tiffany N</h4>
+                        </div>
+                       </div>
+                  <div class="col-lg-4">
+                       <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/img/team/download.jpg')}}" alt="..." />
+                            <h4>Eddie O</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">We would like to thank Summer AI Camp for giving us this opportunity, and special thanks to Seth for mentoring us throughout the project!</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Valorious Vampires 2022</div>
+                    
+                </div>
+            </div>
+        </footer>
+      
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src= "{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Object Detection</h2>
+                                    <img class="img-fluid d-block mx-auto"  src="{{url_for('static', filename='assets/img/portfolio/object_detection.jpg')}}" alt="..." />
+                                    <p>Air Canvas relies on computer vision. Our team used object detection technology to recognize the user’s input gesture. For example, our Convolutional Neural Networks (CNNs) are able to distinguish between a thumbs-up and a thumbs-down. There’s no human being making these decisions– it’s all done by computers!</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">YOLOv5</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/img/portfolio/ConufsionMatrix.png')}}" alt="..." />
+                                    <p>YOLOv5 provided much-needed speed and precision for our model. As our product is webcam based, we needed a CNN that was capable of keeping up with fast movements. YOLOv5’s “you only look once” technology allows our model to scan each frame a single time, instead of hundreds of times. </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Dataset</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/img/portfolio/our_dataset.png')}}" alt="..." />
+                                    <p>	Our dataset contains an 80%/20% split between training/testing images. Each image was collected and labeled manually by our team.
+</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Roboflow</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/img/portfolio/roboflow.png')}}" alt="..." />
+                                    <p>We used Roboflow to scrape data off the internet. In the end, we ended up replacing that data with our own webcam footage we collected manually. Adding bounding boxes with RoboFlow was the finishing touch, and our data was ready to be trained. </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase"> Image Credit </h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/img/portfolio/web_design.jpeg')}}" alt="..." />
+                                    <p>Image 1: https://learn.alwaysai.co/hs-fs/hubfs/object-dectection-4-2.jpg?width=900&height=569&name=object-dectection-4-2.jpg <br>
+Image 2: https://miro.medium.com/max/1400/0*HGMLbxrm3zUKzPRg.jpg <br>
+Image 3: https://assets.website-files.com/5f6bc60e665f54545a1e52a5/613f691a75c36d203344223d_open-graph.png <br>
+Image 4: https://miro.medium.com/max/1400/1*aTYOTFS4Vkr-nwHNML3GvQ.jpeg <br>
+Image 5: https://cdn.vox-cdn.com/thumbor/QCG1UCdF3kgaCIDZsudD_8d4eqc=/0x0:2040x1360/1200x800/filters:focal(807x346:1133x672)/cdn.vox-cdn.com/uploads/chorus_image/image/67029517/jporter_200705_4087_0005.0.0.jpg !</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+  <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static', filename='assets/img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Webcam Integration</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/img/portfolio/webcam_img.jpg')}}" alt="..." />
+                                    <p>Air Canvas is a webcam-based project, meaning that users will need to connect cameras to use it. We primarily used Flask to get this technology to connect. It was by far the most difficult part of our project, and we learned a ton from completing it. </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename='scripts.js')}}"></script>
+    </body>
+</html>
